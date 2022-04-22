@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #grid { 
+            border-radius: 10px;
+            background-color: rgb(84,82,90,255);;
+          display: grid;
+          grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr 1fr ;
+          grid-gap: 0.1vw;
+          width: 200px;
+          height: 300px;
+          margin: 0 auto;
+          border: 2px solid black;
+          color: white;
+          font-weight: bold;
+          }
+       
+          
+          
+        
+        .orang{
+            font-size: 20px;
+          width: 49px;
+          height: 42px;
+          margin: 0 auto;
+          background: orange;
+          text-align: center;
+        }
+        .orang:hover {
+  background: linear-gradient(to top, #2f2f2f 0%, orange 51%, #434343 100%);;
+}
+        .cifr{
+            font-size: 20px;
+          width: 49px;
+          height: 42px;
+          background: rgb(103,101,108,255);
+          text-align: center;
+          margin: 0 auto;
+        }
+        .cifr:hover {
+  background: linear-gradient(to top, #2f2f2f 0%, #6c6972 51%, #434343 100%);;
+}
+        
+        .thre{
+            font-size: 20px;
+          width: 49px;
+          height: 42px;
+          margin: 0 auto;
+          background: linear-gradient(to top, #525058 0%, #525058 51%, #66656a 100%);
+          text-align: center; 
+        }
+        .thre:hover {
+  background: linear-gradient(to top, #2f2f2f 0%, #6c6972 51%, #434343 100%);;
+}
+        
+        #gride1{
+            display: grid;
+            grid-template-columns:  1fr 1fr 1fr ;
+           width: 13px;
+           grid-gap: 0.8vw;
+        }
+        .a1{ 
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border-radius:  0 0 0 10px ;
+            font-size: 20px;
+          
+          background: rgb(103,101,108,255);
+          text-align: center;
+        }
+        .a2{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            border-radius: 10px 10px 0 0 ;
+            font-size: 40px;
+          padding: 8px;
+          background: rgb(84,82,90,255);
+          text-align: right;
+          text-align: end;
+          
+        }
+        .a3{
+            border-radius: 0 0 10px 0;
+            font-size: 20px;
+          
+          background: orange;
+          text-align: center;
+          
+        }
+        .a4{
+           margin-top: 10%
+        }
+        .circle-block {
+  background:red;
+  
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+ }
+ .circle-block1 {
+  background:yellow;
+  
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+ }
+ .circle-block2 {
+  background:green;
+  
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+ }
+ .a111{
+   width: 100%;
+   height: 100%;
+   border-radius:  0 0 0 10px ;
+            font-size: 20px;
+          
+          background: rgb(103,101,108,255);
+          text-align: center;
+ }
+.a111:hover {
+  background: linear-gradient(to top, #2f2f2f 0%, #6c6972 51%, #434343 100%);;
+}
+      .a333{
+        width: 49px;
+          height: 42px;
+          margin: 0 auto;
+   border-radius: 0 0 10px 0;
+            font-size: 20px;
+          
+          background: orange;
+          text-align: center;
+       }
+       .a333:hover {
+  background: linear-gradient(to top, #2f2f2f 0%, orange 51%, #434343 100%);;
+}
+        
+        </style>
+        <div  id="grid">
+            <div class="a2">
+                <div id="gride1">
+                    <div class="circle-block"></div>
+                    <div class="circle-block1"></div>
+                    <div class="circle-block2"></div>
+                </div>
+                <h3 class="a4">0</h3> </div>
+            <div ><input class="thre" type="button" value="AC"></div>
+            <div ><input class="thre" type="button" value="+/-"></div>
+            <div ><input class="thre" type="button" value="%"></div>
+            <div ><input class="orang" type="button" value="÷"></div>
+          <div ><input  class="cifr"  type="button" value="7"></div>
+          <div ><input class="cifr"  type="button" value="8"></div>
+          <div ><input class="cifr"  type="button" value="9"></div>
+          <div ><input class="orang" type="button" value="×"></div>
+          <div ><input class="cifr" type="button" value="4"></div>
+          <div ><input class="cifr" type="button" value="5"></div>
+          <div ><input class="cifr" type="button" value="6"></div>
+          <div ><input class="orang" type="button" value="-"></div>
+          <div ><input class="cifr" type="button" value="1"></div>
+          <div ><input class="cifr" type="button" value="2"></div>
+          <div ><input class="cifr" type="button" value="3"></div>
+          <div ><input class="orang" type="button" value="+"></div>
+          <div class="a1"><input class="a111" type="button" value="0"></div>
+          <div ><input class="cifr" type="button" value=","></div>
+          <div class="a3"><input class="a333" type="button" value="="></div>
+        </div>
+        
+       
+</div>
+</body>
+</html>
